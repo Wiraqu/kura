@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>QamPiQamPi - Tienda de Ancestralidades</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+    <style>
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+        .section {
+            background-color: #121212;
+        }
+        .section-heading h2, .section-heading span, .left-content h2, .left-content span, .left-content p, .quote p {
+            color: #f0f0f0;
+        }
+        .down-content h4, .down-content span {
+            color: #121212;
+        }
+        .header-area {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+        }
+        .main-nav .nav li a, .main-nav .nav li a.active {
+            color: #f0f0f0;
+        }
+        .subscribe {
+            background-color: #1a1a1a;
+        }
+        footer {
+            background-color: #1a1a1a;
+        }
+        footer p, footer h4, footer ul li a {
+            color: #f0f0f0;
+        }
+        .under-footer p {
+            color: #fff;
+        }
+        .right-content .inner-content h4, .right-content .inner-content span, .left-content .inner-content h4, .left-content .inner-content span {
+            color: #fff;
+        }
+        .leather h4, .leather span, .types h4, .types span {
+            color: #fff;
+        }
+        .section-heading {
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .main-nav .logo img {
+            max-width: 200px; /* Ajusta el tamaño del logo si es necesario */
+        }
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        .cart-icon i {
+            font-size: 24px;
+            color: #fff;
+        }
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -12px;
+            background: #f00;
+            color: #fff;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .chatbot-toggler {
+            position: fixed;
+            bottom: 30px;
+            right: 35px;
+            outline: none;
+            border: none;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #724ae8;
+            transition: all 0.2s ease;
+        }
+        .chatbot {
+            position: fixed;
+            right: 35px;
+            bottom: 90px;
+            width: 420px;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.5);
+            transform-origin: bottom right;
+            box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+            transition: all 0.1s ease;
+        }
+        .show-chatbot .chatbot {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1);
+        }
+        .chatbot header {
+            padding: 16px 0;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            background: #724ae8;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .chatbot header h2 { color: #fff; font-size: 1.4rem; }
+        .chatbot .chatbox {
+            overflow-y: auto;
+            height: 510px;
+            padding: 30px 20px 100px;
+            color: #333;
+        }
+        .chatbox .chat { display: flex; list-style: none; }
+        .chatbox .incoming span {
+            width: 32px; height: 32px; color: #fff;
+            cursor: default; text-align: center; line-height: 32px;
+            align-self: flex-end; background: #724ae8; border-radius: 4px; margin: 0 10px 7px 0;
+        }
+        .chatbox .outgoing { margin: 20px 0; justify-content: flex-end; }
+        .chatbox .chat p {
+            white-space: pre-wrap; padding: 12px 16px;
+            border-radius: 10px 10px 0 10px;
+            max-width: 75%; font-size: 0.95rem;
+            color: #fff; background: #724ae8;
+        }
+        .chatbox .incoming p {
+            border-radius: 10px 10px 10px 0;
+            color: #000; background: #f2f2f2;
+        }
+        .chatbot .chat-input {
+            display: flex; gap: 5px; position: absolute;
+            bottom: 0; width: 100%; background: #fff;
+            padding: 3px 20px; border-top: 1px solid #ddd;
+        }
+        .chat-input textarea {
+            height: 55px; width: 100%; border: none; outline: none;
+            resize: none; max-height: 180px; padding: 15px;
+            font-size: 0.95rem;
+        }
+        .chat-input span {
+            align-self: flex-end; color: #724ae8; cursor: pointer;
+            height: 55px; display: flex; align-items: center;
+            visibility: hidden; font-size: 1.45rem;
+        }
+        .chat-input textarea:valid ~ span { visibility: visible; }
+    </style>
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Llapan</a></li>
+                            <li class="scroll-to-section"><a href="#men">Rumi</a></li>
+                            <li class="scroll-to-section"><a href="#women">Allpa</a></li>
+                            <li class="scroll-to-section"><a href="#kids">Sacha</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Paginas</a>
+                                <ul>
+                                    <li><a href="about.html">Somos</a></li>
+                                    <li><a href="products.html">Productos</a></li>
+                                    <li><a href="single-product.html">Personalizados</a></li>
+                                    <li><a href="contact.html">Contáctanos</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:;">Características</a>
+                                <ul>
+                                    <li><a href="#">Contemplacion</a></li>
+                                    <li><a href="#">Meditacion</a></li>
+                                    <li><a href="#">Viajes</a></li>
+                                    <li><a rel="nofollow" href="https://www.instagram.com/" target="_blank">Templates</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#explore">Explorar</a></li>
+                        </ul>
+                        <div class="cart-icon" data-toggle="modal" data-target="#cartModal">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                        <a class='menu-trigger'>
+                            <span>Llapan</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <div class="inner-content">
+                                <h4>QamPiQampi</h4>
+                                <span>Sorprendente, Única &amp; Medicina Creativa</span>
+                                <div class="main-border-button">
+                                    <a href="file:///D:/QinTi/Studio%20Pro/Html/TIenda%20web/Qam%20Pi%20Qam%20Pi/products.html">Trueque Ya!</a>
+                                </div>
+                            </div>
+                            <img src="assets/images/left-banner-image.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Allpa</h4>
+                                            <span>Polvo de estrellas,  Allpa</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Allpa</h4>
+                                                <p>Barro de arcilla y el Arte, la Medicina, la Creatividad y Despertar. Piezas únicas, echas a Mano.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Mantañapuni</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/baner-right-image-01.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Rumi</h4>
+                                            <span>PiedrArte Utilitario</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Rumi</h4>
+                                                <p>Piedra, energia ancestral que armoniza vibraciones utilitarias.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Mantañapuni</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/baner-right-image-02.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Sacha</h4>
+                                            <span>Madera curtida por el tiempo y espacio</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Sacha</h4>
+                                                <p>Madera 0% estatica. Arboles Medicina, Sabiduría electromagnética</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Mantañapuni</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/baner-right-image-03.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>QamPiQampi</h4>
+                                            <span>Medicinas Ancestrales</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>QamPiQampi</h4>
+                                                <p>Plantas de poder, abuelas, maestras sagradas, alimento del Cuerpo, Mente, Espiritú, Energía y Emociones.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Munasmapini</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/baner-right-image-04.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** Men Area Starts ***** -->
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Ancestrales Piedras vanguardistas</h2>
+                        <span>Arte con detalles únicos sin igual en QamPiQampi.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="men-item-carousel">
+                        <div class="owl-men-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Spring" data-price="120.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Air Force 1 X" data-price="90.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-02.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Air Force 1 X</h4>
+                                    <span>$90.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Love Nana ‘20" data-price="150.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-03.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Love Nana ‘20</h4>
+                                    <span>$150.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Spring" data-price="120.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Men Area Ends ***** -->
+
+    <!-- ***** Women Area Starts ***** -->
+    <section class="section" id="women">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Del barro, Arte y belleza permanente</h2>
+                        <span>Arte con detalles únicos sin igual, QamPiQampi.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="women-item-carousel">
+                        <div class="owl-women-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="New Green Jacket" data-price="75.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/women-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>New Green Jacket</h4>
+                                    <span>$75.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Dress" data-price="45.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/women-02.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Dress</h4>
+                                    <span>$45.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Spring Collection" data-price="130.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/women-03.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Spring Collection</h4>
+                                    <span>$130.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Spring" data-price="120.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/women-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Women Area Ends ***** -->
+
+    <!-- ***** Kids Area Starts ***** -->
+    <section class="section" id="kids">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Madera, memorias del Sol y lluvia</h2>
+                        <span>Detalles personalizados únicos QamPiQampi.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="kid-item-carousel">
+                        <div class="owl-kid-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="School Collection" data-price="80.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/kid-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>School Collection</h4>
+                                    <span>$80.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Summer Cap" data-price="12.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/kid-02.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Summer Cap</h4>
+                                    <span>$12.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Kid" data-price="30.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/kid-03.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Kid</h4>
+                                    <span>$30.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Spring" data-price="120.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/kid-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Kids Area Ends ***** -->
+
+    <!-- ***** Men Area Starts ***** -->
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Ancestrales piedras vanguardistas</h2>
+                        <span>Arte con detalles únicos sin igual en QamPiQampi.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="men-item-carousel">
+                        <div class="owl-men-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Spring" data-price="120.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Air Force 1 X" data-price="90.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-02.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Air Force 1 X</h4>
+                                    <span>$90.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Love Nana ‘20" data-price="150.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-03.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Love Nana ‘20</h4>
+                                    <span>$150.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="javascript:void(0);" class="add-to-cart" data-name="Classic Spring" data-price="120.00"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/men-01.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Men Area Ends ***** -->
+
+    <!-- ***** Explore Area Starts ***** -->
+    <section class="section" id="explore">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <h2>Explorar QamPiQampi</h2>
+                        <span>Arte y Cultura, innovacion y medicina, es el legado de nuestros ancestros. Adelantados a nuestros tiempos, nos eredaron la existencia en lo sencillo y elemental. QamPiQampi.</span>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>QamPiQampi única Web. Protejido por Derechos del Autor. QamPiQampi.</p>
+                        </div>
+                        <p>En esta pagina encontraras productos de arte único, que tienen coneccion natural y directa a conocerte..</p>
+                        <p>Si los atributos son de su agrado, Gracias por su colaboración. <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">Columna</a>Colaboración PayPal. Por favor comparte con tus amigos sobre QamPiQampi. Gracias.</p>
+                        <div class="main-border-button">
+                            <a href="products.html">Despertar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="leather">
+                                    <h4>Ropa Orgánica</h4>
+                                    <span>Colección Única</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="first-image">
+                                    <img src="assets/images/explore-image-01.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="second-image">
+                                    <img src="assets/images/explore-image-02.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="types">
+                                    <h4>Allpa Kamasqa</h4>
+                                    <span>Sin Fin, únicos eh irrepetibles.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Explore Area Ends ***** -->
+
+    <!-- ***** Social Area Starts ***** -->
+    <section class="section" id="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Redes Sociales</h2>
+                        <span>Los detalles son lo que hace a QamPiQampi único.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row images">
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Vestidos</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram-01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Nuevo</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram-02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>QamPiQampiQuq</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram-03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Constituir</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram-04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Cuero</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram-05.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Chuspa</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram-06.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Social Area Ends ***** -->
+
+    <!-- ***** Subscribe Area Starts ***** -->
+    <div class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-heading">
+                        <h2>Al suscribirte a nuestro boletín puedes obtener un 30% de descuento</h2>
+                        <span>Detalles personalizados son lo que hace a QamPiQampi único.</span>
+                    </div>
+                    <form id="subscribe" action="" method="get">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <fieldset>
+                              <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-5">
+                            <fieldset>
+                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-2">
+                            <fieldset>
+                              <button type="submit" id="form-submit" class="main-dark-button"><i class="fa fa-paper-plane"></i></button>
+                            </fieldset>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li>Direccion:<br><span>Maria Parado de Bellido, 01138, Ayacucho-Perú</span></li>
+                                <li>Celular:<br><span>+51 916922597</span></li>
+                                <li>Oficina:<br><span>M.P.B. 01138</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Horario:<br><span>08:30 AM - 5:30 PM lun. a Sab.</span></li>
+                                <li>Email:<br><span>qampiqampi@gmail.com</span></li>
+                                <li>Redes Sociales:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Tiktok</a>, <a href="#">X (Twitter)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Subscribe Area Ends ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
+                        </div>
+                        <ul>
+                            <li><a href="#">01138 prol. Maria Parado de Bellido, Ayacucho, 01138, Perú</a></li>
+                            <li><a href="#">qampiqampi@gmail.com</a></li>
+                            <li><a href="#">+51 916922597</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categorias</h4>
+                    <ul>
+                        <li><a href="#">Rumi Comprar</a></li>
+                        <li><a href="#">Allpa Comprar</a></li>
+                        <li><a href="#">Sacha Comprar</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Principal</a></li>
+                        <li><a href="#">SomoS</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Información</h4>
+                    <ul>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Envío</a></li>
+                        <li><a href="#">ID de Seguimiento</a></li>
+                    </ul>
+                    <h4 style="margin-top: 20px;">Métodos de Pago</h4>
+                    <p>Aceptamos tarjetas, PayPal y Criptomonedas (ISO 20022).</p>
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/pp_cc_mark_111x69.png" alt="Payment Methods" style="max-width: 150px; background: white; padding: 5px; border-radius: 5px; margin-top:10px;">
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2024 Qam Pi Qam Pi Co., Ltd. All Rights Reserved. 
+                        
+                        <br>Gracias: <a href="https://templatemo.com" target="_parent" title="free css templates">QampiKuq</a></p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel" style="color: #000;">Carrito de Compras</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="cart-items" style="color: #000;">
+            <!-- Cart items will be injected here by JavaScript -->
+          </div>
+          <div class="modal-footer">
+            <h5 style="color: #000;">Total: $<span id="cart-total">0.00</span></h5>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Proceder al Pago</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chatbot -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">Ta</span>
+        <span class="material-symbols-outlined">Puq</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">Tapuq</span>
+                <p>¡Hola! 👋<br>¿Cómo puedo ayudarte hoy?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Escribe un mensaje..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+    
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+        // Shopping Cart Logic
+        $(function() {
+            let cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+
+            function updateCart() {
+                let cartItemsHtml = '';
+                let total = 0;
+                let itemCount = 0;
+
+                if (cart.length === 0) {
+                    cartItemsHtml = '<p>Tu carrito está vacío.</p>';
+                } else {
+                    cart.forEach((item, index) => {
+                        cartItemsHtml += `
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>${item.name} (x${item.quantity})</span>
+                                <span>$${(item.price * item.quantity).toFixed(2)}</span>
+                                <button class="btn btn-danger btn-sm remove-from-cart" data-index="${index}">&times;</button>
+                            </div>
+                        `;
+                        total += item.price * item.quantity;
+                        itemCount += item.quantity;
+                    });
+                }
+
+                $('#cart-items').html(cartItemsHtml);
+                $('#cart-total').text(total.toFixed(2));
+                $('.cart-count').text(itemCount);
+                localStorage.setItem('shoppingCart', JSON.stringify(cart));
+            }
+
+            $('.add-to-cart').on('click', function() {
+                const name = $(this).data('name');
+                const price = parseFloat($(this).data('price'));
+
+                const existingItem = cart.find(item => item.name === name);
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ name, price, quantity: 1 });
+                }
+                updateCart();
+                alert(name + ' ha sido añadido al carrito.');
+            });
+
+            $('#cart-items').on('click', '.remove-from-cart', function() {
+                const index = $(this).data('index');
+                cart.splice(index, 1);
+                updateCart();
+            });
+
+            updateCart();
+        });
+
+        // Chatbot Logic
+        const chatbotToggler = document.querySelector(".chatbot-toggler");
+        const chatInput = document.querySelector(".chat-input textarea");
+        const sendChatBtn = document.querySelector(".chat-input span");
+        const chatbox = document.querySelector(".chatbox");
+
+        let userMessage = null; 
+        const API_KEY = "PASTE-YOUR-API-KEY"; // Placeholder for a real API key
+        const inputInitHeight = chatInput.scrollHeight;
+
+        const createChatLi = (message, className) => {
+            const chatLi = document.createElement("li");
+            chatLi.classList.add("chat", `${className}`);
+            let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+            chatLi.innerHTML = chatContent;
+            chatLi.querySelector("p").textContent = message;
+            return chatLi;
+        }
+
+        const generateResponse = (chatElement) => {
+            const messageElement = chatElement.querySelector("p");
+            // Simple hardcoded responses
+            const responses = {
+                "hola": "¡Hola! ¿En qué puedo ayudarte?",
+                "pagos": "Aceptamos tarjetas de crédito/débito, PayPal y criptomonedas.",
+                "envio": "Ofrecemos envío internacional. El costo y tiempo varían según el destino.",
+                "gracias": "¡De nada! Estoy aquí para ayudarte.",
+                "default": "No he entendido tu pregunta. ¿Puedes reformularla? Puedes preguntar sobre 'pagos' o 'envio'."
+            };
+            const response = responses[userMessage.toLowerCase()] || responses['default'];
+            messageElement.textContent = response;
+            chatbox.scrollTo(0, chatbox.scrollHeight);
+        }
+
+        const handleChat = () => {
+            userMessage = chatInput.value.trim();
+            if(!userMessage) return;
+
+            chatInput.value = "";
+            chatInput.style.height = `${inputInitHeight}px`;
+
+            chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+            chatbox.scrollTo(0, chatbox.scrollHeight);
+            
+            setTimeout(() => {
+                const incomingChatLi = createChatLi("Pensando...", "incoming");
+                chatbox.appendChild(incomingChatLi);
+                chatbox.scrollTo(0, chatbox.scrollHeight);
+                generateResponse(incomingChatLi);
+            }, 600);
+        }
+
+        chatInput.addEventListener("input", () => {
+            chatInput.style.height = `${inputInitHeight}px`;
+            chatInput.style.height = `${chatInput.scrollHeight}px`;
+        });
+
+        chatInput.addEventListener("keydown", (e) => {
+            if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+                e.preventDefault();
+                handleChat();
+            }
+        });
+
+        sendChatBtn.addEventListener("click", handleChat);
+        chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+    </script>
+
+  </body>
+</html>
